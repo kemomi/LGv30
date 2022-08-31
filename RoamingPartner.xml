@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<policy name="generic" schema_ver="1" policy_ver="2016.06.10.001.01">
+  <initial>
+    <actions>
+
+      <!-- sim operator name list START -->
+
+      <plmn_list name="att">
+        310-150 310-170 310-380 310-410 310-560 310-680 310-070 310-090
+      </plmn_list>
+
+      <plmn_list name="tmus">
+        310-260 310-190 310-200 310-210 310-220 310-230 310-240 310-250 310-270
+      </plmn_list>
+
+      <plmn_list name="vzw">
+        311-480
+      </plmn_list>
+
+      <plmn_list name="spr">
+        310-120
+      </plmn_list>
+
+      <plmn_list name="usc">
+        311-580
+      </plmn_list>
+
+      <plmn_list name="rgs">
+        302-720
+      </plmn_list>
+
+      <plmn_list name="bell">
+        302-610
+      </plmn_list>
+
+      <plmn_list name="tls">
+        302-220
+      </plmn_list>
+
+      <plmn_list name="tcl">
+        334-020
+      </plmn_list>
+
+      <plmn_list name="vivo">
+        724-06 724-10 724-11 724-23
+      </plmn_list>
+
+      <plmn_list name="claro">
+        724-05
+      </plmn_list>
+
+      <plmn_list name="tim">
+        724-02 724-03 724-04
+      </plmn_list>
+
+      <plmn_list name="skt">
+        450-05
+      </plmn_list>
+
+      <plmn_list name="kt">
+        450-08
+      </plmn_list>
+
+      <plmn_list name="lgu">
+        450-06
+      </plmn_list>
+
+      <plmn_list name="dcm">
+        440-01 440-02 440-10
+      </plmn_list>
+
+      <plmn_list name="kddi">
+        440-50 440-51
+      </plmn_list>
+
+      <plmn_list name="sbm">
+        440-04 440-06 440-20
+      </plmn_list>
+
+      <plmn_list name="vdf">
+        262-02
+      </plmn_list>
+
+      <plmn_list name="org">
+        234-30 234-33 208-01
+      </plmn_list>
+
+      <plmn_list name="h3g">
+        234-20 235-94
+      </plmn_list>
+
+      <plmn_list name="tlf">
+        214-07 234-10 262-07
+      </plmn_list>
+
+      <plmn_list name="dtag">
+        262-01
+      </plmn_list>
+
+      <plmn_list name="cmcc">
+        460-00 460-02 460-07 460-08
+      </plmn_list>
+
+      <plmn_list name="tel">
+        505-01
+      </plmn_list>
+
+      <plmn_list name="test">
+        450-00 001-01 001-02
+      </plmn_list>
+
+      <!-- sim operator name list END -->
+
+
+      <!-- roaming partner list per each country START -->
+
+
+
+<!-- Input each operator's roaming partner list here          -->
+<!-- <plmn_list name="operatorNAME_rp_in_roamingMCC">         -->
+<!--   111-11 222-22 333-333                                  -->
+<!-- </plmn_list>                                             -->
+
+
+
+
+
+
+      <!--  vivo roaming partner START   -->
+      <!--  korea   -->
+      <plmn_list name="vivo_rp_in_450">
+        450-05 450-08
+      </plmn_list>
+      <!--  vivo roaming partner END   -->
+
+      <!--  us   -->
+      <plmn_list name="vivo_rp_in_310">
+        310-640 310-410 310-260 310-420 310-650 311-040 310-020 310-450
+      </plmn_list>
+      <!--  vivo roaming partner END   -->
+
+      <!--  japan   -->
+      <plmn_list name="vivo_rp_in_440">
+        440-01 440-02 440-10 440-04 440-06 440-20 440-00
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="vivo_rp_in_234">
+        234-15 234-20 234-10 234-30 234-33 234-07
+      </plmn_list>
+
+      <!--  france   -->
+      <plmn_list name="vivo_rp_in_208">
+        208-01 208-20 208-09 208-10 208-15
+      </plmn_list>
+
+      <!--  turkey   -->
+      <plmn_list name="vivo_rp_in_286">
+        286-01 286-02 286-03 286-04
+      </plmn_list>
+
+      <!--  china   -->
+      <plmn_list name="vivo_rp_in_460">
+        460-00 460-02 460-07 460-08 460-01 460-09
+      </plmn_list>
+
+      <!--  hk   -->
+      <plmn_list name="vivo_rp_in_454">
+        454-03 454-04 454-00 454-02 454-18 454-16 454-19 454-12 454-06 454-15 454-17
+      </plmn_list>
+      <!--  vivo roaming partner END   -->
+
+      <!--  claro roaming partner START   -->
+      <!--  korea   -->
+      <plmn_list name="claro_rp_in_450">
+        450-05 450-08
+      </plmn_list>
+
+      <!--  us   -->
+      <plmn_list name="claro_rp_in_310">
+        310-410 310-260 310-420 310-020
+      </plmn_list>
+      <!--  claro roaming partner END   -->
+
+      <!--  japan   -->
+      <plmn_list name="claro_rp_in_440">
+        440-10 440-20
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="claro_rp_in_234">
+        234-30 234-20 234-10 234-15
+      </plmn_list>
+
+      <!--  france   -->
+      <plmn_list name="claro_rp_in_208">
+        208-20 208-01 208-10 208-09
+      </plmn_list>
+
+      <!--  turkey   -->
+      <plmn_list name="claro_rp_in_286">
+        286-01 286-02 286-03
+      </plmn_list>
+
+      <!--  mexico   -->
+      <plmn_list name="claro_rp_in_334">
+        334-020 334-050
+      </plmn_list>
+
+      <!--  germany   -->
+      <plmn_list name="claro_rp_in_262">
+        262-01 262-02 262-03 262-08
+      </plmn_list>
+
+      <!--  russia   -->
+      <plmn_list name="claro_rp_in_250">
+        250-01 250-02 250-03 250-15 250-92 250-99
+      </plmn_list>
+
+      <!--  china   -->
+      <plmn_list name="claro_rp_in_460">
+        460-00 460-02 460-07 460-01
+      </plmn_list>
+
+      <!--  hk   -->
+      <plmn_list name="claro_rp_in_454">
+        454-03 454-04 454-06 454-10 454-19
+      </plmn_list>
+
+      <!--  singapore   -->
+      <plmn_list name="claro_rp_in_525">
+        525-01 525-03 525-05
+      </plmn_list>
+
+      <!--  canada   -->
+      <plmn_list name="claro_rp_in_302">
+        302-310 302-720 302-780 302-220 302-500
+      </plmn_list>
+
+      <!--  indonesia   -->
+      <plmn_list name="claro_rp_in_510">
+        510-11
+      </plmn_list>
+      <!--  claro roaming partner END   -->
+
+      <!--  tim roaming partner START   -->
+      <!--  korea   -->
+      <plmn_list name="tim_rp_in_450">
+        450-05 450-08
+      </plmn_list>
+
+      <!--  us   -->
+      <plmn_list name="tim_rp_in_310">
+        310-150 310-170 310-380 310-410 310-590 310-490 310-720 310-690 310-420 310-460 310-260 310-250 310-240 310-230 310-220 310-210 310-200 310-660 310-310 310-270 310-160 310-020
+      </plmn_list>
+
+      <!--  japan   -->
+      <plmn_list name="tim_rp_in_440">
+        440-10 440-20
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="tim_rp_in_234">
+        234-15 234-30 234-33 234-20 234-10
+      </plmn_list>
+
+      <!--  france   -->
+      <plmn_list name="tim_rp_in_208">
+        208-01 208-10 208-20
+      </plmn_list>
+
+      <!--  turkey   -->
+      <plmn_list name="tim_rp_in_286">
+        286-01 286-02 286-03 286-04
+      </plmn_list>
+
+      <!--  mexico   -->
+      <plmn_list name="tim_rp_in_334">
+        334-020 334-030 334-050
+      </plmn_list>
+
+      <!--  germany   -->
+      <plmn_list name="tim_rp_in_262">
+        262-01 262-02 262-03 262-07 262-08
+      </plmn_list>
+
+      <!--  russia   -->
+      <plmn_list name="tim_rp_in_250">
+        250-01 250-02 250-05 250-07 250-20 250-39 250-99
+      </plmn_list>
+
+      <!--  china   -->
+      <plmn_list name="tim_rp_in_460">
+        460-00 460-02 460-07 462-01
+      </plmn_list>
+
+      <!--  hk   -->
+      <plmn_list name="tim_rp_in_454">
+        454-00 454-03 454-04 454-06 454-16 454-19
+      </plmn_list>
+
+      <!--  singapore   -->
+      <plmn_list name="tim_rp_in_525">
+        525-01 525-03 525-05
+      </plmn_list>
+
+      <!--  canada   -->
+      <plmn_list name="tim_rp_in_302">
+        302-720 302-370 302-220 302-610 302-270 302-500
+      </plmn_list>
+
+      <!--  indonesia   -->
+      <plmn_list name="tim_rp_in_510">
+        510-01 510-10
+      </plmn_list>
+      <!--  tim roaming partner END   -->
+
+      <!--  vdf roaming partner START   -->
+      <!--  korea   -->
+      <plmn_list name="vdf_rp_in_450">
+        450-05 450-08
+      </plmn_list>
+      <!--  vdf roaming partner END   -->
+
+      <!--  us   -->
+      <plmn_list name="vdf_rp_in_310">
+        310-410 310-260 310-120
+      </plmn_list>
+
+      <!--  japan   -->
+      <plmn_list name="vdf_rp_in_440">
+        440-01 440-02 440-10 440-04 440-06 440-20
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="vdf_rp_in_234">
+        234-10 234-20 234-30
+      </plmn_list>
+
+      <!--  france   -->
+      <plmn_list name="vdf_rp_in_208">
+        208-01 208-20 208-09 208-10
+      </plmn_list>
+
+      <!--  brazil   -->
+      <plmn_list name="vdf_rp_in_724">
+        724-16 724-31 724-05 724-02 724-03 724-04 724-06 724-10 724-11 724-23
+      </plmn_list>
+
+      <!--  turkey   -->
+      <plmn_list name="vdf_rp_in_286">
+        286-01 286-02 286-03 286-04
+      </plmn_list>
+
+      <!--  mexico   -->
+      <plmn_list name="vdf_rp_in_334">
+        334-020 334-030 334-050
+      </plmn_list>
+
+      <!--  russia   -->
+      <plmn_list name="vdf_rp_in_250">
+        250-01 252-02 250-07 250-15 250-99
+      </plmn_list>
+
+      <!--  china   -->
+      <plmn_list name="vdf_rp_in_460">
+        460-00 460-02 460-07 460-08 460-01 460-09
+      </plmn_list>
+
+      <!--  hk   -->
+      <plmn_list name="vdf_rp_in_454">
+        454-03 454-04 454-12 454-13 454-06 454-15 454-17 454-00 454-02 454-18
+      </plmn_list>
+
+      <!--  singapore   -->
+      <plmn_list name="vdf_rp_in_525">
+        525-01 525-02 525-03 525-04 525-05
+      </plmn_list>
+
+      <!--  canada   -->
+      <plmn_list name="vdf_rp_in_302">
+        302-720 302-610 302-220
+      </plmn_list>
+
+      <!--  indonesia   -->
+      <plmn_list name="vdf_rp_in_510">
+        510-10 510-01 510-21 510-11 510-89
+      </plmn_list>
+      <!--  vdf roaming partner END   -->
+
+      <!--  dtag roaming partner START   -->
+      <!--  korea   -->
+      <plmn_list name="dtag_rp_in_450">
+        450-05 450-08
+      </plmn_list>
+
+      <!--  us   -->
+      <plmn_list name="dtag_rp_in_310">
+        310-410 310-260
+      </plmn_list>
+
+      <!--  japan   -->
+      <plmn_list name="dtag_rp_in_440">
+        440-12 440-20
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="dtag_rp_in_234">
+        234-10 234-20 235-94 234-30 234-33 234-15
+      </plmn_list>
+
+      <!--  france   -->
+      <plmn_list name="dtag_rp_in_208">
+        208-01 208-09 208-10 208-20
+      </plmn_list>
+
+      <!--  brazil   -->
+      <plmn_list name="dtag_rp_in_724">
+        724-05 724-02 724-03 724-04 724-06 724-10 724-11 724-23 724-16 724-31	724-39
+      </plmn_list>
+
+      <!--  turkey   -->
+      <plmn_list name="dtag_rp_in_286">
+        286-01 286-02 286-03
+      </plmn_list>
+
+      <!--  mexico   -->
+      <plmn_list name="dtag_rp_in_334">
+        334-020 334-050 334-090
+      </plmn_list>
+
+      <!--  russia  -->
+      <plmn_list name="dtag_rp_in_250">
+        250-01 250-02 250-07 250-15 250-99
+      </plmn_list>
+
+      <!--  china  -->
+      <plmn_list name="dtag_rp_in_460">
+        460-00 460-02 460-07 460-08 460-01 460-09
+      </plmn_list>
+
+      <!--  hk  -->
+      <plmn_list name="dtag_rp_in_454">
+        454-03 454-04 454-12 454-13 454-06 454-15 454-17 454-00 454-02 454-18
+      </plmn_list>
+
+      <!--  singapore  -->
+      <plmn_list name="dtag_rp_in_525">
+        525-01 525-02 525-03 525-04 525-05
+      </plmn_list>
+
+      <!--  canada   -->
+      <plmn_list name="dtag_rp_in_302">
+        302-720 302-610 302-220
+      </plmn_list>
+
+      <!--  indonesia  -->
+      <plmn_list name="dtag_rp_in_510">
+        510-10 510-01 510-21 510-11
+      </plmn_list>
+      <!--  dtag roaming partner END   -->
+
+
+      <!--  SKT roaming partner   -->
+      <!--  us   -->
+      <plmn_list name="skt_rp_in_310">
+        310-170 310-380 310-410 310-150 310-560 310-26 310-31 310-160 310-200 310-210 310-220 310-230 310-240 310-250 310-260 310-660 310-270 310-310 310-490
+      </plmn_list>
+
+      <!--  canada   -->
+      <plmn_list name="skt_rp_in_302">
+        302-720 302-220 302-640 302-610 
+      </plmn_list>
+
+      <!--  uk   -->
+      <plmn_list name="skt_rp_in_234">
+        234-10 234-20 234-33 234-30 234-31 234-32 234-15
+      </plmn_list>
+
+      <!--  FR   -->
+      <plmn_list name="skt_rp_in_208">
+        208-01 208-10 
+      </plmn_list>
+
+      <!--  BRA   -->
+      <plmn_list name="skt_rp_in_724">
+        724-05 724-23 724-06 724-10 724-11
+      </plmn_list>
+
+      <!--  TUR   -->
+      <plmn_list name="skt_rp_in_286">
+        286-01 286-02 286-03
+      </plmn_list>
+
+      <!--  MEX   -->
+      <plmn_list name="skt_rp_in_334">
+        334-03 334-02
+      </plmn_list>
+
+      <!--  DEU   -->
+      <plmn_list name="skt_rp_in_262">
+        262-01 262-02 262-07 262-08
+      </plmn_list>
+      
+      <!--  RUS   -->
+      <plmn_list name="skt_rp_in_250">
+        250-01 250-02 250-99 
+      </plmn_list>
+      
+      <!--  CHN   -->
+      <plmn_list name="skt_rp_in_460">
+        460-00 460-01 460-07 460-08 460-09 460-02
+      </plmn_list>
+      
+      <!--  HKG   -->
+      <plmn_list name="skt_rp_in_454">
+        454-00 454-02 454-18 454-06 454-15  
+      </plmn_list>
+      
+      <!--  SGP   -->
+      <plmn_list name="skt_rp_in_525">
+        525-01 525-02 525-03 525-04 
+      </plmn_list>
+      
+      <!--  IDN   -->
+      <plmn_list name="skt_rp_in_510">
+        510-00 510-10 510-21 510-01
+      </plmn_list>
+      
+      <!--  JPN   -->
+      <plmn_list name="skt_rp_in_440">
+        440-20
+      </plmn_list>
+
+
+      <!--  test_roaming_plmn   -->
+      <plmn_list name="test_rp_in_450">
+        333-33 444-44 555-55 123-12 234-23 345-34
+      </plmn_list>
+
+      <!--  test_roaming_plmn   -->
+      <plmn_list name="test_rp_in_002">
+        666-66 777-77
+      </plmn_list>
+
+      <!-- roaming partner list per each country END -->
+
+   </actions>
+ </initial>
+</policy>
+

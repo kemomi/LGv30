@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Device configuration file for SRLTE with CHGWL roaming 
+$Header: //commercial/MPSS.AT.2.5.c1/Main/modem_proc/mmcp/policyman/configurations/Carrier/Sprint/1xSRLTE/CHGWL_roam/subsidized/carrier_policy.xml#1 $
+-->
+<policy name        = "generic"
+        changelist  = "$Change: 13247332 $" 
+        enabled     = "true"
+        schema_ver  = "1"
+        policy_ver  = "2800.1.8"
+>
+
+  <initial>
+    <actions>
+
+     <!-- Test operator  -->
+      <plmn_list name="test_operators">450-00 001-01 001-010 001-02 001-03</plmn_list>
+
+
+      <!-- List of the MCCs in which SRLTE is allowed -->
+      <mcc_list name="sxlte_mccs"> 310 311 312 313 314 315 316 330 460 </mcc_list>
+
+      <rat_capability base="none">
+        <include> CDMA HDR GSM WCDMA LTE </include>
+      </rat_capability>
+
+      <!-- Define Intial UE mode as 1X_CSFB_PREF -->
+      <ue_mode_if> 1X_CSFB_PREF </ue_mode_if>
+
+      <!-- Set HW RF bands excluding TDS -->
+      <rf_bands>
+        <gw_bands base="hardware" />
+        <lte_bands base="hardware" />
+        <tds_bands base="none" />
+      </rf_bands>
+
+      <!-- Define an RF band list for US domestic -->
+      <!-- Domestic LTE Roam - SYS_SBAND_LTE_EUTRAN_BAND2 = 1, SYS_SBAND_LTE_EUTRAN_BAND4 = 3, SYS_SBAND_LTE_EUTRAN_BAND5 = 4, SYS_SBAND_LTE_EUTRAN_BAND12 = 11 -->
+      <!-- Domestic LTE Home - SYS_SBAND_LTE_EUTRAN_BAND25 = 24, SYS_SBAND_LTE_EUTRAN_BAND26 = 25, SYS_SBAND_LTE_EUTRAN_BAND41 = 40 -->
+      <rf_band_list name="rf_bands_us">
+        <gw_bands base="hardware" />
+        <lte_bands base="none">
+          <include> 1 3 4 11 12 24 25 40</include>
+        </lte_bands>
+        <tds_bands base="none" />
+      </rf_band_list>
+
+      <feature> srlte </feature>
+
+    </actions>
+  </initial>
+
+  <!-- RULE #1 -->
+  <rule precond="none">
+    <conditions>
+      <not> <have_service /> </not>
+    </conditions>
+    <actions />
+  </rule>
+  
+  <!-- RULE #2 -->
+  <!-- TEST Operators -->
+  <rule precond="IMSI">
+    <conditions>
+      <imsi_plmn_in subs="1" list="test_operators" />
+    </conditions>
+    <actions>
+    	<ue_mode> 1X_CSFB_PREF </ue_mode>
+    </actions>
+  </rule>   
+ 
+  <!-- RULE #3 -->
+  <if>
+    <cond> <location_mcc_in list="sxlte_mccs" /> </cond>
+    <then>
+     <ue_mode> 1X_CSFB_PREF </ue_mode> 
+     <rf_bands subs="1" list="rf_bands_us" />
+     </then>
+    <else> 
+     <ue_mode> CSFB </ue_mode> 
+     <rf_bands subs="1" base="config" /> 
+     </else>
+  </if>
+
+</policy>
